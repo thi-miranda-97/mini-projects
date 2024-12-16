@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Tomorrow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #eeedeb;
+  background-color: #2f3645;
+}
+
+#main {
+  max-width: 70%;
+  margin: 3.2rem auto;
+  padding: 4.8rem 3.2rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  background-color: #939185;
+  padding: 2.4rem 4.8rem;
+  width: 60rem;
+  margin: 2.4rem auto;
+  border-radius: 20px;
+  justify-items: center;
+  box-shadow: 1.2rem 1.5rem 2rem 0rem #252525;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+#text-input {
+  height: 4.8rem;
+  width: auto;
+  padding: 0 1.8rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.4rem;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid #fcf4d9;
+  background-color: #939185;
+}
+
+#check-btn {
+  margin-left: 3.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.2rem 2.4rem;
+  background-color: #e6b9a6;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+#check-btn:hover {
+  background-color: #3b1e54;
+  color: #e6b9a6;
+}
+
+#hint {
+  text-align: center;
+  font-style: italic;
+}
+
+#result {
+  color: #ffb38e;
+  width: 30rem;
+  height: auto;
+  margin: 2.4rem;
+}
