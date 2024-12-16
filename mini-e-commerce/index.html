@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Plant</title>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="#">GREENNY.</a>
+      <div class="cart__container">
+        <button class="navigation--cart">
+          <svg
+            class="navigation--cart--icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="#435334"
+            fill="#435334"
+          >
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+            ></path>
+          </svg>
+        </button>
+        <span id="cart-count">0</span>
+      </div>
+    </nav>
+    <div class="container">
+      <header>
+        <section class="hero">
+          <div>
+            <h1 class="primary--heading">Bring Nature to Your Doorstep</h1>
+            <p class="hero__sub-heading">
+              Explore a wide range of indoor and outdoor plants to brighten up
+              your space and refresh your life.
+            </p>
+            <div class="buttons">
+              <button class="buttons__btn--primary">Shop Now</button>
+              <button class="buttons__btn--secondary">
+                <a href="#">Explore</a>
+              </button>
+            </div>
+
+            <section class="features">
+              <div class="features__item">
+                <img
+                  src="./images/feature-plant-1.jpeg"
+                  alt="Monstera Pot Plan"
+                  class="features__item-image"
+                />
+                <div class="features__item-text">
+                  <h3 class="tertiary--heading">Monstera Delight</h3>
+                  <p class="features__item--description">
+                    Lush leaves for a tropical vibe.
+                  </p>
+                  <p class="features__item--price">$30</p>
+                </div>
+              </div>
+              <div class="features__item">
+                <img
+                  src="./images/feature-plant-2.jpeg"
+                  alt="Succulent Star"
+                  class="features__item-image"
+                />
+                <div class="features__item-text">
+                  <h3 class="tertiary--heading">Succulent Star</h3>
+                  <p class="features__item--description">
+                    Low maintenance, high charm.
+                  </p>
+                  <p class="features__item--price">$15</p>
+                </div>
+              </div>
+              <div class="features__item">
+                <img
+                  src="./images/feature-plant-3.jpeg"
+                  alt="Fiddle Leaf Joy"
+                  class="features__item-image"
+                />
+                <div class="features__item-text">
+                  <h3 class="tertiary--heading">Fiddle Leaf Joy</h3>
+                  <p class="features__item--description">
+                    A bold and elegant centerpiece.
+                  </p>
+                  <p class="features__item--price">$45</p>
+                </div>
+              </div>
+              <a href="#" class="arrow-icon"
+                ><img src="./images/arrow.svg" alt="Arrow Icon"
+              /></a>
+            </section>
+          </div>
+
+          <div>
+            <img
+              class="hero__image"
+              src="./images/hero.png"
+              alt="Plant Pot Hero Image"
+            />
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="categories">
+          <div class="categories__filter">
+            <button href="#" class="categories__filter--item">
+              All products
+            </button>
+            <button href="#" class="categories__filter--item">Indoor</button>
+            <button href="#" class="categories__filter--item">Outdoor</button>
+          </div>
+
+          <div class="categories__container" id="product-list">
+            <!-- PRODUCT ITEMS HERE -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <p>
+        <a href="#" class="footer--link">Terms & Conditions</a>
+        |
+        <a href="#" class="footer--link">Privacy Policy</a>
+      </p>
+      <a href="mailto:support@greenny.com">Email: support@greenny.com</a>
+      <p>&copy; 2024 Thi Nguyen</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
