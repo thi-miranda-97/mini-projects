@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Git and Version Control Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Git</header>
+      <a href="#intro" class="nav-link">Introduction</a>
+      <a href="#vs" class="nav-link">What is Version Control?</a>
+      <a href="#git" class="nav-link">Understanding Git</a>
+      <a href="#set_up" class="nav-link">Setting Up Git</a>
+      <a href="#git_command" class="nav-link">Basic Git Commands</a>
+      <a href="#type" class="nav-link">Branching and Merging</a>
+      <a href="#repo" class="nav-link">Working with Remote Repositories</a>
+      <a href="#workflow" class="nav-link">Common Workflows</a>
+      <a href="#reference" class="nav-link">Reference</a>
+    </nav>
+    <main id="main-doc">
+      <section id="intro" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Git is a distributed version control system commonly used for tracking
+          changes in source code during software development. Created by Linus
+          Torvalds in 2005, Git has become the de facto standard for version
+          control, allowing multiple developers to work on projects
+          simultaneously while keeping track of every change made.
+        </p>
+      </section>
+      <section id="vs" class="main-section">
+        <header>What is Version Control?</header>
+        <p>
+          Version control is a system that allows developers to manage changes
+          to code over time. It enables the following:
+        </p>
+        <ul>
+          <li>
+            <strong>Tracking Changes</strong>: Keep a history of every change
+            made to the project files.
+          </li>
+          <li>
+            <strong>Collaboration</strong>: Allows multiple people to work on a
+            project without overwriting each other’s changes.
+          </li>
+          <li>
+            <strong>Reverting</strong>: Provides a way to go back to a previous
+            state in case of errors or unwanted changes.
+          </li>
+        </ul>
+        <p>There are two main types of version control systems:</p>
+        <ul>
+          <li>
+            <strong>Centralized Version Control (CVCS):</strong> A single
+            central repository, like SVN.
+          </li>
+          <li>
+            <strong>Distributed Version Control (DVCS):</strong> Each user has a
+            complete copy of the project history, like Git.
+          </li>
+        </ul>
+      </section>
+      <section id="git" class="main-section">
+        <header>Understanding Git</header>
+        <p>
+          Git is a distributed version control system that keeps track of code
+          changes. Some key concepts include:
+        </p>
+        <ul>
+          <li>
+            <strong>Repository</strong>: A directory that contains all project
+            files and a .git folder with metadata.
+          </li>
+          <li>
+            <strong>Commit</strong>: A snapshot of changes in the repository.
+          </li>
+          <li><strong>Branch</strong>: A parallel version of a repository.</li>
+          <li>
+            <strong>Merge</strong>: The process of integrating changes from one
+            branch to another.
+          </li>
+        </ul>
+        <p>
+          Git’s distributed nature allows each developer to have their own copy
+          of the project, making it easy to work offline and preventing data
+          loss.
+        </p>
+      </section>
+      <section id="set_up" class="main-section">
+        <header>Setting Up Git</header>
+        <p>To start using Git, you’ll need to install it on your machine.</p>
+        <ol>
+          <li>
+            <strong>Download Git:</strong> Go to git-scm.com and download the
+            installer for your operating system.
+          </li>
+          <li>
+            <strong>Install Git:</strong> Follow the installation steps in the
+            installer.
+          </li>
+          <li>
+            <strong>Configure Git:</strong> Once installed, set your name and
+            email in Git, which will be linked to your commits.
+          </li>
+          <li>
+            <strong>Download Git:</strong> Go to git-scm.com and download the
+            installer for your operating system.
+          </li>
+          <code class="code"
+            >git config --global user.name "Your Name" <br />
+            git config --global user.email "you@example.com"</code
+          >
+          <li>
+            <strong>Verify the Installation:</strong> Check that Git is
+            installed by running:
+          </li>
+          <code class="code">git --version</code>
+        </ol>
+      </section>
+      <section id="git_command" class="main-section">
+        <header>Basic Git Commands</header>
+        <p>Below are some essential Git commands:</p>
+        <ul>
+          <li>
+            <strong>git init:</strong> Initializes a new Git repository in the
+            current directory.
+          </li>
+          <li>
+            <strong>git clone:</strong> Copies an existing repository from a
+            remote location.
+          </li>
+          <li><strong>git add:</strong> Stages files to be committed.</li>
+          <li>
+            <strong>git commit -m "message":</strong> Commits the staged changes
+            with a message.
+          </li>
+          <li>
+            <strong>git status:</strong> Displays the status of the working
+            directory.
+          </li>
+          <li>
+            <strong>git log:</strong> Shows a history of commits in the
+            repository.
+          </li>
+        </ul>
+        <p>Example:</p>
+        <code class="code">
+          git init <br />
+          git add . <br />
+          git commit -m "Initial commit"
+        </code>
+      </section>
+      <section id="type" class="main-section">
+        <header>Branching and Merging</header>
+        <p>
+          Branching is a powerful feature in Git that allows you to work on
+          different versions of a project simultaneously.
+        </p>
+        <ul>
+          <li>
+            <strong>Creating a Branch:</strong>Use
+            <code>git branch branch-name</code> to create a new branch.
+          </li>
+          <li>
+            <strong>Switching Branches:</strong>Use
+            <code>git checkout branch-name</code> to switch to an existing
+            branch.
+          </li>
+          <li>
+            <strong>Merging Branches:</strong>Integrate changes from one branch
+            to another with <code>git merge branch-name</code>.
+          </li>
+        </ul>
+      </section>
+      <section id="repo" class="main-section">
+        <header>Working with Remote Repositories</header>
+        <p>
+          Remote repositories are hosted on the internet or an intranet. Git
+          allows you to push and pull code to/from these remote repositories.
+        </p>
+        <ul>
+          <li>
+            <strong>git remote add origin url:</strong> Links your local repo to
+            a remote repo.
+          </li>
+          <li>
+            <strong>git push origin branch-name:</strong> Pushes commits to the
+            remote repository.
+          </li>
+          <li>
+            <strong>git pull origin branch-name:</strong> Pulls changes from the
+            remote repository.
+          </li>
+        </ul>
+        <p>Example</p>
+        <code class="code"
+          >git remote add origin https://github.com/username/repository.git
+          <br />
+          git branch -M main <br />
+          git push -u origin main
+        </code>
+      </section>
+      <section id="workflow" class="main-section">
+        <header>Common Workflows</header>
+        <p>Here are some common Git workflows used in team environments:</p>
+        <ul>
+          <li>
+            <strong>Feature Branch Workflow:</strong> Each feature or bug fix is
+            developed in a separate branch.
+          </li>
+          <li>
+            <strong>Gitflow Workflow:</strong> Uses a specific branch structure
+            with <code>main</code>, <code>develop</code>, <code>feature</code>,
+            and <code>hotfix</code> branches.
+          </li>
+          <li>
+            <strong>Forking Workflow:</strong> Ideal for open source projects
+            where contributors fork the repository, make changes, and submit
+            pull requests.
+          </li>
+        </ul>
+      </section>
+      <section id="reference" class="main-section">
+        <header>Reference</header>
+        <p>
+          This technical document provides a foundation in Git and version
+          control. Following these instructions will help you manage code
+          changes and collaborate efficiently in any project. For more details,
+          refer to the official
+          <a class="reference-link" href="https://git-scm.com/doc"
+            >Git documentation.</a
+          >
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
