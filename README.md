@@ -23,4 +23,4 @@ Feel free to explore, learn, and contribute!
 
 ### How to Run
 1. Clone the repository:
-   
+   git clone https://github.com/thi-miranda-97/mini-projects.git
