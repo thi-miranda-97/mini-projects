@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Full Name <input id="name" type="text" placeholder="Enter your full name" required></label>
+      </fieldset>
+      <fieldset>
+      <label id="email-label" for="email">Contact Email <input id="email" type="email" placeholder="Enter your email" required></label>
+      </fieldset>
+        <fieldset>
+      <label id="number-label" for="age">Age (optional) <input id="number" type="number" min=18 max=120 placeholder="Age"></label>
+      </fieldset>
+        <fieldset>
+          <label for="dropdown"> What best describes your level of experience in tech?
+          <select id="dropdown">
+           
+            <option value="">Select current level</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4">Expert</option>
+            <option value="5">Prefer not to say</option>
+          </select>
+          </label>
+      </fieldset>
+      <fieldset>
+        <label for="radio">How likely are you to recommend this workshop to a friend?<br>
+          <input type="radio" value="radio" id="definitely" name="option" checked>  Very Likely
+          <br>
+         <input type="radio" value="radio" id="maybe" name="option"> Neutral
+         <br>
+          <input type="radio" value="radio" id="not-sure" name="option"> Unlikely
+          
+        </label> 
+      </fieldset>
+
+      <fieldset>
+          <label for="dropdown"> What was your favorite part of the workshop?
+          <select id="dropdown">
+           
+            <option value="">Select an option</option>
+            <option value="1">Hands-on Labs</option>
+            <option value="2">Keynote Speakers</option>
+            <option value="3">Networking Sessions</option>
+            <option value="4">Q&A Panels</option>
+          </select>
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="checkbox">Which areas would you like to see more focus on in future workshops? (Check all that apply)<br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Web Development
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Data Science
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Cloud Computing
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Cybersecurity
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Machine Learning
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Software Engineering
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Project Management
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Career Guidance
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Coding Challenges
+          <br>
+          <input id="checkbox" type="checkbox" value="checkbox" > Technical Support
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="suggestion">Additional Comments or Suggestions?
+          <textarea id="suggestion" name="suggestion" rows="40" cols="50" placeholder="Enter your feedback here..."></textarea>
+        </label>
+      </filedset>
+      <input type="submit" name="submit" id="submit">
+
+    </form>
+  </body
+</html>
